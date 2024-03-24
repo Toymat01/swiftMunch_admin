@@ -1,6 +1,6 @@
 import React from "react";
 import MenuCard from "@/components/ui/card/Menu"
-import pasta_img from "../../../../../public/images/pasta_img.png"
+import pasta_img from "../../../../public/images/pasta_img.png"
 
 const Menu = () => {
   return <div className="mt-10 ">

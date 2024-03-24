@@ -5,8 +5,8 @@ import Header from '@/components/common/Header'
 import Image from 'next/image';
 import React, { useState } from 'react'
 import { FaLessThan } from "react-icons/fa6";
-import resturant_cover_photo from "../../../../../public/images/cover-photo.png"
-import resturant_pixs from "../../../../../public/images/resturant-profile-photo.png"
+import resturant_cover_photo from "../../../../public/images/cover-photo.png"
+import resturant_pixs from "../../../../public/images/resturant-profile-photo.png"
 import { PrimaryButton, PrimaryOutlineButton } from '@/components/ui/Buttons/Button';
 import Input from '@/components/inputFields/input/input';
 

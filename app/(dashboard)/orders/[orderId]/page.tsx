@@ -5,8 +5,8 @@ import { useRouter, useParams } from 'next/navigation';
 import { Card } from '@/components/ui/card/Card';
 import { IoIosArrowBack } from 'react-icons/io';
 import Image from 'next/image';
-import user_profile from "../../../../../public/images/profile_pixs.png"
-import rating from "../../../../../public/images/starts.png"
+import user_profile from "../../../../public/images/profile_pixs.png"
+import rating from "../../../../public/images/starts.png"
 import { toast } from 'react-toastify';
 import moment from 'moment';
 import { Spinner } from '@/components/ui/Spinner/Spinner';

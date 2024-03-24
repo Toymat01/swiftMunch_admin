@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import { Card } from '@/components/ui/card/Card';
 import { IoIosArrowBack } from 'react-icons/io';
 import Image from 'next/image';
-import user_profile from "../../../../../../public/images/profile_pixs.png"
+import user_profile from "../../../../../public/images/profile_pixs.png"
 
 
 function Page() {
