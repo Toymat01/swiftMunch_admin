@@ -1,19 +1,20 @@
+import Image from "next/image";
 import React from "react";
 
 function Socials() {
   return (
     <div className="z-[90]   lg:border lg:border-lightDark  rounded-[6.25rem] inline-flex justify-between p-[0.62rem] gap-4">
-      <img
+      <Image
         src="/images/facebook_icon.png"
         alt="facebook icon"
         className="cursor-pointer w-[2rem] h-[2rem]"
       />
-      <img
+      <Image
         src="/images/x_icon.png"
         alt="x icon"
         className="cursor-pointer w-[2rem] h-[2rem]"
       />
-      <img
+      <Image
         src="/images/instagram_icon.png"
         alt="instagram icon"
         className="cursor-pointer w-[2rem] h-[2rem]"
