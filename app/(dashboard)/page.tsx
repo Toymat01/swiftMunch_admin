@@ -251,8 +251,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <Card width="w-full xl:w-1/2">
-            <div className="top flex justify-between items-center w-full text-grey3 px-6">
+          <Card width="w-full xl:w-1/2 hidden">
+            <div className="top flex justify-between items-center w-full text-grey3 px-6 " >
               <div>
                 <p className="text-lg font-bold">Chart Order</p>
                 <p className="text-[0.72rem] text-[#B9BBBD]">Lorem ipsum dolor sit amet, consectetur adip</p>
@@ -266,6 +266,7 @@ export default function Home() {
             </div>
             <div className="charts flex justify-between items-center w-full mt-4 text-grey3 font-bold text-sm px-2">
               <div className="chart w-full">
+                
                 {/*  <ReactApexChart options={{
                   legend: {
                     show: false,
@@ -289,7 +290,7 @@ export default function Home() {
             </div>
           </Card>
         </section>
-        <section className="flex justify-between items-center mt-6 gap-x-4" >
+        <section className="justify-between items-center mt-6 gap-x-4 hidden" >
           <Card width="w-full md:w-[55%] xl:w-[65%]">
             <div className="top flex justify-between items-center w-full text-grey3 px-6">
               <div>
