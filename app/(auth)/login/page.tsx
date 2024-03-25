@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from '../../../../public/images/logo.png'
+import logo from '../../../public/images/logo.png'
 import dynamic from 'next/dynamic'
 
 const LoginForm = dynamic(() => import("@/components/LoginForm/Login"), { ssr: false })
