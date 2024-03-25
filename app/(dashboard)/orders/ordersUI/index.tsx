@@ -189,7 +189,7 @@ export default function Index({ }: Props) {
       .then((res) => res.json())
       .then((data) => {
         toast.success(data.message)
-        console.log(data);
+        
         setCancelOrderLoading((prevState => ({
           ...prevState,
           [id]: false
@@ -269,7 +269,6 @@ export default function Index({ }: Props) {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setRiderModalShow(false)
         setAssigning_rider(false)
         fetchAllOrders()

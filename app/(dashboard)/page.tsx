@@ -5,9 +5,9 @@ import { RiDownloadLine } from "react-icons/ri";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { useState } from 'react';
 import { Poppins } from 'next/font/google'
-//import dynamic from "next/dynamic";
+import dynamic from "next/dynamic";
 //import ReactApexChart from "react-apexcharts"; 
-//const ReactApexChart = dynamic(() => import("react-apexcharts"), { ssr: false });
+const ReactApexChart = dynamic(() => import("react-apexcharts"), { ssr: false });
 import { Card, SmallCard } from "@/components/ui/card/Card";
 import Review from "@/components/ui/TestimonialCard/Review";
 import AnandreansyahPix from "../../public/images/Anandreansyah.png"
@@ -175,20 +175,77 @@ export default function Home() {
               <div className="chart flex flex-col w-2/6 items-center">
                 <div className="chart">
 
-                  {/*   <ReactApexChart options={totalOrders.options} series={totalOrders.series} type="donut" width="210" /> */}
+                  <ReactApexChart
+                    options={{
+                      legend: {
+                        show: false,
+                      },
+                      fill: {
+                        colors: ['#FF5B5B', '#FF5B5B26'],
+                        type: 'solid',
+                        pattern: {
+                          style: 'verticalLines',
+                          width: 40,
+                          height: 40,
+                          strokeWidth: 20,
+                        },
+                      }
+                    }}
+                    series={[55, 15]}
+                    type="donut"
+                    width={"210"}
+                  />
                 </div>
                 <p className="text-[0.7rem]">Total Order</p>
               </div>
               <div className="chart flex flex-col w-2/6 items-center">
                 <div className="chart">
 
-                  {/*   <ReactApexChart options={totalOrders.options} series={totalOrders.series} type="donut" width="210" /> */}
+                  <ReactApexChart
+                    options={{
+                      legend: {
+                        show: false,
+                      },
+                      fill: {
+                        colors: ['#00B074', '#00B07426'],
+                        type: 'solid',
+                        pattern: {
+                          style: 'verticalLines',
+                          width: 40,
+                          height: 40,
+                          strokeWidth: 20,
+                        },
+                      }
+                    }}
+                    series={[15, 55]}
+                    type="donut"
+                    width={"210"}
+                  />
                 </div>
                 <p className="text-[0.7rem]">Customer Growth</p>
               </div>
               <div className="chart flex flex-col w-2/6 items-center">
                 <div className="chart">
-                  {/*   <ReactApexChart options={totalOrders.options} series={totalOrders.series} type="donut" width="210" /> */}
+                  <ReactApexChart
+                    options={{
+                      legend: {
+                        show: false,
+                      },
+                      fill: {
+                        colors: ['#2D9CDB26', '#2D9CDB'],
+                        type: 'solid',
+                        pattern: {
+                          style: 'verticalLines',
+                          width: 40,
+                          height: 40,
+                          strokeWidth: 20,
+                        },
+                      }
+                    }}
+                    series={[36, 64]}
+                    type="donut"
+                    width={"210"}
+                  />
                 </div>
                 <p className="text-[0.7rem]">Total Revenue</p>
               </div>
@@ -209,8 +266,7 @@ export default function Home() {
             </div>
             <div className="charts flex justify-between items-center w-full mt-4 text-grey3 font-bold text-sm px-2">
               <div className="chart w-full">
-
-                {/* <ReactApexChart options={{
+                {/*  <ReactApexChart options={{
                   legend: {
                     show: false,
                   },
@@ -291,7 +347,7 @@ export default function Home() {
                     height: 350,
                     type: 'bar',
                   },
-                  //colors: ["red", "blue"],
+                  colors: ["red", "blue"],
                   plotOptions: {
                     bar: {
                       columnWidth: '45%',

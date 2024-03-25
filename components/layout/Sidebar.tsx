@@ -23,7 +23,7 @@ export const navlist: MenuItem[] = [
   {
     label: "Dashboard",
     path: "/",
-    icon: <GrHomeRounded size={16}  />,
+    icon: <GrHomeRounded size={16} />,
   },
   {
     label: "Orders",
@@ -93,16 +93,15 @@ function Sidebar() {
       <ul className="nav-container flex flex-col gap-y-2">
         {navlist.map((nav, index) => {
 
-
           return (
-            <li key={index} className='gay-y-4 flex items-center justify-between mr-6'>
-              {pathname.includes(nav.path) ? <span className='w-[2%] bg-primary inline-block py-3 rounded-lg h-[2.7rem]'></span> : <span className='w-[2%] inline-block py-3 rounded-lg h-[2.7rem]'></span>}
+            <li key={index} className='gay-y-4 flex items-center justify-between mr-6 font-semibold' >
+              {pathname == nav.path ? <span className='w-[2%] bg-primary inline-block py-3 rounded-lg h-[2.7rem]'></span> : <span className='w-[2%] inline-block py-3 rounded-lg h-[2.7rem]'></span>}
 
               <Link
                 href={nav.path}
-                className={`pl-4 flex font-medium pr-4 text-grey3 text-sm hover:bg-primary-shade hover:text-primary py-3 rounded-lg w-[90%] ${pathname === nav.path ? "bg-primary-shade text-primary font-extrabold" : ""}`}>
+                className={`pl-4 flex pr-4 text-[#595663] text-sm hover:bg-primary-shade hover:text-primary py-3 rounded-lg w-[90%] ${pathname === nav.path ? "bg-primary-shade text-primary font-extrabold" : ""}`}>
                 {nav.icon}
-                <span className="ml-5">{nav.label}</span>
+                <span className="ml-5 " >{nav.label}</span>
               </Link>
             </li>
           )

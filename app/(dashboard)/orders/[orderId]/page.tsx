@@ -61,7 +61,6 @@ function Page() {
             .then((data) => {
                 setOrdersDetails(data)
                 setIsLoading(false)
-                console.log(data);
 
             }).catch(err => {
                 if (err?.status == 401) {
