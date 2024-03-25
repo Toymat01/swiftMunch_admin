@@ -1,4 +1,4 @@
-'use server'
+/* 'use server'
 import { cookies } from "next/headers";
 import { encrypt } from "./lib";
 import { redirect } from "next/navigation";
@@ -46,4 +46,4 @@ export async function authenticate(_currentState: unknown, formData: FormData) {
         console.log(error);
 
     }
-}
+} */
